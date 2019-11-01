@@ -6,27 +6,60 @@ Particle Swarm Optimization (PSO) techniques are based on leveraging the global 
 
 ## Getting Started
 
-To get started with using this optimization algorithm you can either fork this repository or clone it directly.
+To get started with using this optimization algorithm, install the prerequisites and follow the installation instructions.
 
 ### Prerequisites
 
 Python 3.7
 ```
-sudo apt-get install python3.7
+>> sudo apt-get install python3.7
 ```
 Numpy 1.17.2
 ```
-pip install numpy
+>> pip install numpy
 ```
 
 ### Installing
 
+Get a local copy of code
+
+```
+git clone https://github.com/justinvzyl/Monarch-Butterfly-Optimization.git
+```
 
 ## Usage
 
+In the base directory ```../Monarch-Butterfly-Optimization/``` execute:
 
-## Running the tests
+```
+>> python3 mbo.py
 
+<<
+MBO Algorithm is starting on function f6...
+Solution found!
+
+-0.9850740317638069 @ x=[-1.4966534005938463, -0.8278107736430631]
+
+DONE!
+
+```
+For help
+```
+>> python3 mbo.py -h
+<<
+usage: mbo.py [-h] [-f [{f6,f7,achley,schwefel,rastrigin}]] [-d [D]] [-n [N]]
+              [-ncpu [NCPU]]
+
+Run the MBO algorithm to find a solution to a minimization problem.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f [{f6,f7,achley,schwefel,rastrigin}]
+                        Minimization function
+  -d [D]                Number of dimensions of the minimization function
+  -n [N]                Number of repeat evaluations
+  -ncpu [NCPU]          Number of CPU cores to use
+```
 
 ## Authors
 
